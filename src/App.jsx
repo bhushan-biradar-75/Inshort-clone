@@ -1,37 +1,24 @@
-import React from 'react'
+import React,{useState}from 'react'
 import News from './Compo/News'
-// import Newsitem from './Compo/Newsitem'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Compo/Navbar';
-import './App.css'
-// import Newsitem from './Compo/Newsitem';
-import { useState } from 'react/cjs/react.production.min';
 import Headline from './Compo/Headline';
+import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App(btndata) {
 
   console.log(btndata)
-  // const [mode , setmode] = useState('light');
 
-  // const tooglemode = () => {
-  //   if(mode == 'light')
-  //   {
-  //     setmode('dark')
-  //     document.body.style.background = '#042743';
-  //   }
-  //   else{
-  //     setmode('light')
-  //     document.body.style.background = 'white';
-  //   }
-  // }
   return (
-    
+
     <div>
-      
+
       <BrowserRouter>
-        <Navbar  getnews={btndata}/>
-        <Headline/>
+        <Navbar getnews={btndata} /> 
+                                      {/* //passing props to nav bar */}
+        <Headline />
         <Routes>
+                                      {/* routing and destructuring api */}
           <Route path="/sports" element={<News category="sports" />}></Route>
           <Route path="/health" element={<News category="health" />}></Route>
           <Route path="/entertainment" element={<News category="entertainment" />}></Route>
@@ -46,4 +33,3 @@ function App(btndata) {
 }
 
 export default App
-// export { newsdata };
