@@ -1,0 +1,84 @@
+/* card design */
+
+.card{
+    /* margin-left: 65%; */
+    /* background-color: rgba(252, 244, 244, 0.849); */
+    border: solid 1px black;
+    /* position: fixed; */
+}
+/* #card-img{
+    /* margin-top: 50px; */
+    /* height: 100px; */
+    /* border-radius: 45px; */
+
+/* Nav bar design */
+
+.main{
+    margin-top: 25px;
+    margin-left: 60%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+
+.black-lives-matter {
+  font-size: 5vw;
+  line-height: 5vw;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,0.08);
+  animation: zoomout 10s ease 500ms forwards;
+}
+
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
+@media screen and (min-width:480px){
+    
+
+@media screen and (min-width:480px){
+        #res-card{
+            height:200px;
+            width: 50px;
+            /* background-color: aqua;   */
+        }
+    }
+    @media screen and (min-width:480px){
+        .black-lives-matter {
+            font-size: 4vw;
+            line-height: 5vw;
+            justify-content: center;
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: 900;
+            background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+            background-size: 40%;
+            background-position: 50% 50%;
+            -webkit-background-clip: text;
+            color: rgba(0,0,0,0.08);
+            animation: zoomout 10s ease 500ms forwards;
+          }
+          
+          @keyframes zoomout {
+            from {
+              background-size: 40%;
+            }
+            to {
+              background-size: 10%;
+            }
+          }
+        }
+    }
+        
+          
+
+
+        
