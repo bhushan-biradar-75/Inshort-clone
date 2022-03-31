@@ -2,7 +2,7 @@
 // showing the card item with the help of prop drilling
 
 const Newsitem = (data) => {
-
+ 
   return (
     <>
       <div>
